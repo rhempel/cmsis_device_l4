@@ -33,10 +33,7 @@ SRC_ASM += Source/Templates/gcc/startup_$($(MODULE)_startup_VARIANT).s
 SYSTEM_STARTUP_OBJ := $(BUILD_PATH)/$(MODULE_PATH)/Source/Templates/gcc/startup_$($(MODULE)_startup_VARIANT).o
 
 # ----------------------------------------------------------------------------
-# Set up the module level source and include paths
-
-$(MODULE)_SRCPATH :=
-$(MODULE)_SRCPATH += $(MODULE_PATH)/Source/Templates/gcc/
+# Set up the module level include path
 
 $(MODULE)_INCPATH :=
 $(MODULE)_INCPATH += $(MODULE_PATH)/Include
